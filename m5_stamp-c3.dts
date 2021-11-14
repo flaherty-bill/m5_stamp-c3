@@ -19,6 +19,15 @@
 		zephyr,flash = &flash0;
 	};
 
+	leds {
+             compatible = "gpio-leds";
+             led0: led_0 {
+                     gpios = <&gpio2>;
+                     label = "LED 0";
+             };
+             /* ... other LEDs ... */
+	};	
+
 	aliases {
 		sw0 = &user_button1;
 		i2c-0 = &i2c0;
