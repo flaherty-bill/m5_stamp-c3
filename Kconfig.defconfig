@@ -1,11 +1,11 @@
-# ESP32C3 devkitm board configuration
+# M5 Stamp-C3 board configuration
 
 # Copyright (c) 2021 Espressif Systems (Shanghai) Co., Ltd.
 # SPDX-License-Identifier: Apache-2.0
 
 config BOARD
-	default "esp32c3"
-	depends on BOARD_ESP32C3_DEVKITM
+	default "m5_stamp-c3"
+	depends on BOARD_M5_STAMP-C3
 
 config ENTROPY_ESP32_RNG
 	default y if ENTROPY_GENERATOR
